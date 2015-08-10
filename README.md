@@ -23,7 +23,7 @@ All cards have the following attributes:
  - Flavor Text
 
 #### Resource
-A card that can be used to gain resources that are refilled at the end of every turn. You can now play cards that cost resources. A common card text you will see on resource cards is the ability to change the effect on a creature slot. Resource cards may only be played once every turn.
+A card that can be used to gain resources that are refilled at the end of every turn. You can now play cards that cost resources. A common card text you will see on resource cards is the ability to add an object to a creature slot. Resource cards may only be played once every turn.
 
 #### Creature
 A card that can be used to combat other creatures and to deal damage to the opponent directly. It has the following extra attributes:
@@ -37,7 +37,7 @@ Creatures always consist of multiple fragments, each fragment has their own name
 A card that is used to change the state of the board, this can only be used on your turn.
 
 #### Direct Spell
-A card that is used to have a direct effect on the board, this can be used at any moment.
+A card that is used to have a direct effect on the board, this can be used when the window to play Direct Spells is up.
 
 #### Permanent
 A card that effects the state of the board permanently, until it is destroyed.
@@ -97,6 +97,8 @@ If you look at slot A, then the distance to the directly opposite slot is 1, and
 
 The field has a maximum of 9 slots, when a new creature enters the field when it is full, then all card text will still resolve, but it will be placed in the Reserves section of the field. Creatures in Reserves cannot enter combat. When a slot becomes available, then the creature that entered the Reserves first, will enter that slot immediately.
 
+Slots can have effects on them, which are represented as objects having at least 1 Health, during Combat Resolution the slot entity will always be attacked before the creature gets attacked.
+
 ### Detailed gameplay
 The game is played in turns, where each turn consists of the following phases. In some turns you will not be able to play cards and you can only play cards on your opponents turn on some occasions.
 
@@ -129,6 +131,8 @@ The combat phase consists of the following steps:
 ##### Combat resolution
 In combat, both the attacker and defender simultaneously deal damage equal to their Attack Power to the Health of the defender. In this section you thus have both the original attacker attacking the original defender, and the original defender attacking the original attacker.
 
+If an object is present on the slot, which has Attack Power, Health and Range values just like any other fragment, then it gets targeted first during the combat resolution.
+
 The attacker will deal damage equal to its Attack Power to a randomly chosen fragment with the most Health of the defender. If the Health of the fragment reaches zero, then it is destroyed and this step will be repeated with as new Attack Power the current Attack Power minus the Health of the fragment that just got destroyed.
 
 #### Main Phase 2
@@ -154,7 +158,7 @@ In this section some example cards will be listed, themed in a fantasy world whe
   <tr><td>Name</td><td>Fresh blood</td></tr>
   <tr><td>Type</td><td>Resource</td></tr>
   <tr><td>Rarity</td><td>Common</td></tr>
-  <tr><td>Card Text</td><td>Gives the player 1 Blood Resource. Buff a Creature Slot to give it +50 Health every turn.</td></tr>
+  <tr><td>Card Text</td><td>Gives the player 1 Blood Resource. Add a 25 Health object with as effect give +50 Health every turn to a Creature Slot.</td></tr>
 </table>
 
 ### Cast iron
@@ -162,7 +166,7 @@ In this section some example cards will be listed, themed in a fantasy world whe
   <tr><td>Name</td><td>Cast iron</td></tr>
   <tr><td>Type</td><td>Resource</td></tr>
   <tr><td>Rarity</td><td>Common</td></tr>
-  <tr><td>Card Text</td><td>Gives the player 1 Iron Resource. Buff a Creature Slot to give it +200 Health.</td></tr>
+  <tr><td>Card Text</td><td>Gives the player 1 Iron Resource. Add a 200 Health object to a Creature Slot.</td></tr>
 </table>
 
 ### Lancer Orc
