@@ -100,12 +100,15 @@ The field has a maximum of 9 slots, when a new creature enters the field when it
 Slots can have effects on them, which are represented as objects having at least 1 Health, during Combat Resolution the slot entity will always be attacked before the creature gets attacked.
 
 ### Detailed gameplay
-The game is played in turns, where each turn consists of the following phases. In some turns you will not be able to play cards and you can only play cards on your opponents turn on some occasions.
+The game is played in turns, which are listed below. In some turns you will not be able to play cards and you can only play cards on your opponents turn on some occasions.
 
 When playing a card the opponent will always have a 5 second time window in which he can cast Direct Spells.
 
+#### Start of the game
+The player that starts first is randomly decided with both players having an equal chance. Both players draw 4 cards and can draw a new hand at the cost of one card.
+
 #### Draw Phase
-You draw one card from your deck into your hand.
+You draw two cards from your deck into your hand.
 
 #### Event Phase
 Random events may be triggered, these events effect all players.
