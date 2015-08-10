@@ -139,7 +139,7 @@ The attacker will deal damage equal to its Attack Power to a randomly chosen fra
 You can play any card that is eligible.
 
 #### End Phase
-Effects that trigger at the end of the turn are triggered. The Health of all creatures is reset to their initial Health.
+Effects that trigger at the end of the turn are triggered. The stats of the fragments of all creatures are reset to their initial values, then the stats of the creatures are set to the sum of stats on their fragments.
 
 ### Random events
 Every turn random events can be started. Their effect is unknown to both players and can be assumed to increase as the game progresses. There will be a timer and a progress bar visible to both players.
