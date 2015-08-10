@@ -100,6 +100,8 @@ The field has a maximum of 9 slots, when a new creature enters the field when it
 ### Detailed gameplay
 The game is played in turns, where each turn consists of the following phases. In some turns you will not be able to play cards and you can only play cards on your opponents turn on some occasions.
 
+When playing a card the opponent will always have a 5 second time window in which he can cast Direct Spells.
+
 #### Draw Phase
 You draw one card from your deck into your hand.
 
@@ -116,16 +118,18 @@ You can play any card that is eligible.
 The combat phase consists of the following steps:
 
  - You select with which creatures you want to attack the opponent.
- - The opponent can choose which non-exhausted creatures, which are in range, should block your creatures, he can also cast Direct Spells.
+ - The opponent can choose with which non-exhausted creatures to block, they need to be in range of the attacking creature.
+ - The opponent gets a 5 second time window in which he can cast Direct Spells.
  - Combat is resolved, see the section Combat resolution for the details.
  - If a creature is not blocked, then it will deal damage equal to its Attack Power to the opponent.
  - The creatures Attack Power, Health and Range are calculated again based on the remaining fragments.
+ - All creatures with zero Health will be removed and put in the Graveyard.
  - All attacking creatures enter an exhausted state.
 
 ##### Combat resolution
 In combat, both the attacker and defender simultaneously deal damage equal to their Attack Power to the Health of the defender. In this section you thus have both the original attacker attacking the original defender, and the original defender attacking the original attacker.
 
-Every time damage is dealt there will be a chance that a fragment on the defender gets destroyed. This chance equals the attackers Attack Power divided by the defenders Health.
+The attacker will deal damage equal to its Attack Power to a randomly chosen fragment with the most Health of the defender. If the Health of the fragment reaches zero, then it is destroyed and this step will be repeated with as new Attack Power the current Attack Power minus the Health of the fragment that just got destroyed.
 
 #### Main Phase 2
 You can play any card that is eligible.
