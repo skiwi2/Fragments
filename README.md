@@ -153,6 +153,20 @@ The timer will indicate in how many turns the random event will take place.
 #### Progress bar
 The progress bar has a set end and players may choose to fill this progress bar. It can be filled by sacrificing Creatures, Slots, Cards (from Hand, Deck and Graveyard) and Player Health. All cards sacrificed this way will be voided. If the progress bar is full, then the random event will not take place.
 
+#### Examples
+In this section some example events will be listed.
+
+On a random event triggered on Turn 6 the following could happen for example:
+- A random creature on the field gets destroyed.
+- All creatures get a Shield Fragment that gives 50 Health.
+- Both players lose a card in their Hand.
+
+In contrast, examples for Turn 20 could be:
+- Everything on the board is destroyed.
+- Both players discard their hand.
+- All creatures get a Shield Fragment that gives 200 Health and a Weapon Fragment that gives 100 Attack Power and 2 Range.
+- Nothing happens at all.
+
 ## Example cards
 In this section some example cards will be listed, themed in a fantasy world where there are different races *and* robots.
 
