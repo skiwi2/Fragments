@@ -211,9 +211,9 @@ In this section some example cards will be listed, themed in a fantasy world whe
   <tr><td>Rarity</td><td>Uncommon</td></tr>
   <tr><td>Cost</td><td>3 Iron, 2 Any-kind</td></tr>
   <tr><td>Attack Power</td><td>200</td></tr>
-  <tr><td>Health</td><td>1000</td></tr>
+  <tr><td>Health</td><td>200</td></tr>
   <tr><td>Range</td><td>2</td></tr>
   <tr><td>Card Text</td><td>When you enter combat and the defender loses a fragment, you gain it.</td></tr>
   <tr><td>Fragment 1</td><td>Laser: 200 Attack Power, 2 Range</td></tr>
-  <tr><td>Fragment 2</td><td>Body: 1000 Health</td></tr>
+  <tr><td>Fragment 2</td><td>Body: 200 Health</td></tr>
 </table>
