@@ -175,7 +175,7 @@ In this section some example cards will be listed, themed in a fantasy world whe
   <tr><td>Name</td><td>Fresh blood</td></tr>
   <tr><td>Type</td><td>Resource</td></tr>
   <tr><td>Rarity</td><td>Common</td></tr>
-  <tr><td>Card Text</td><td>Gives the player 1 Blood Resource. Add a 25 Health object with as effect add a 50 Health fragment at the end of every turn to a Creature in that Creature Slot.</td></tr>
+  <tr><td>Card Text</td><td>Gives the player 1 Blood Resource. Add a 25 Health object with as effect add a 50 Health fragment at the end of every turn to the Creature in this Creature Slot.</td></tr>
 </table>
 
 ### Fresh blood (2)
@@ -183,7 +183,7 @@ In this section some example cards will be listed, themed in a fantasy world whe
   <tr><td>Name</td><td>Fresh blood</td></tr>
   <tr><td>Type</td><td>Resource</td></tr>
   <tr><td>Rarity</td><td>Common</td></tr>
-  <tr><td>Card Text</td><td>Gives the player 1 Blood Resource. Add a 25 Health object with as effect add 50 Health to this Health object at the end of every turn.</td></tr>
+  <tr><td>Card Text</td><td>Gives the player 1 Blood Resource. Add a 25 Health object with as effect add 50 Health to this object at the end of every turn.</td></tr>
 </table>
 
 ### Cast iron
